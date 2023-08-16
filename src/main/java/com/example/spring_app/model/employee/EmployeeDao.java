@@ -21,11 +21,11 @@ public class EmployeeDao {
         return employees;
     }
 
-    public void save(Employee employee){
-        repository.save(employee);
+    public Employee addEmployee(Employee employee){
+        return repository.save(employee);
     }
 
-    public void delete(Employee employee){
+    public void deleteEmployee(Employee employee){
         repository.delete(employee);
     }
 
