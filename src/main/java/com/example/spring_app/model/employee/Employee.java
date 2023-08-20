@@ -13,6 +13,8 @@ public class Employee {
     private int id;
 
     private String FIO;
+    private String location;
+    private String branch;
 
     public String getLocation() {
         return location;
@@ -30,8 +32,7 @@ public class Employee {
         this.branch = branch;
     }
 
-    private String location;
-    private String branch;
+
 
     public String getFIO() {
         return FIO;
@@ -53,7 +54,7 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", FIO='" + FIO + '\'' +
+                ", fio='" + FIO + '\'' +
                 ", location='" + location + '\'' +
                 ", branch='" + branch + '\'' +
                 '}';

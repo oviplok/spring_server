@@ -19,6 +19,13 @@ public class EmployeeController {
 
     }
 
+    @DeleteMapping("/employee/delete/{key_word}")
+    public void deleteByIdEmployee(@PathVariable("key_word") int id){
+        employeeDao.deleteById(id);
+
+    }
+
+
     @GetMapping(value = "/employee/get/{key_word}")
     public List<Employee> getEmployeesByKeyword(@PathVariable("key_word") String key_word){
         return employeeDao.getEmployeesByKeyword(key_word);
