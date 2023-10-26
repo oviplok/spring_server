@@ -21,7 +21,7 @@ class SpringAppApplicationTests {
 //    @Test
     void  addEmployeeTest(){
         Employee employee = new Employee();
-        employee.setFIO("Ketamine Catamite");
+        employee.setFio("Ketamine Catamite");
         employee.setLocation("York");
         employee.setBranch("IT");
         employeeDao.addEmployee(employee);

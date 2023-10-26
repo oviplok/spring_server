@@ -12,7 +12,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String FIO;
+    private String fio;
     private String location;
     private String branch;
 
@@ -34,12 +34,12 @@ public class Employee {
 
 
 
-    public String getFIO() {
-        return FIO;
+    public String getFio() {
+        return fio;
     }
 
-    public void setFIO(String FIO) {
-        this.FIO = FIO;
+    public void setFio(String fio) {
+        this.fio = fio;
     }
 
     public void setId(int id) {
@@ -54,7 +54,7 @@ public class Employee {
     public String toString() {
         return "Employee{" +
                 "id=" + id +
-                ", fio='" + FIO + '\'' +
+                ", fio='" + fio + '\'' +
                 ", location='" + location + '\'' +
                 ", branch='" + branch + '\'' +
                 '}';
